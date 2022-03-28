@@ -46,8 +46,8 @@ from sys import argv, executable, stderr
 
 from typing import Any, Dict, List, Optional, Tuple, Union
 
-import capdl
-from capdl.Object import (TCB, SC, RTReply, Endpoint, Notification, PUD, PGD, PageDirectory, PageTable, CNode)
+from sel4coreplat import capdl
+from sel4coreplat.capdl.Object import (TCB, SC, RTReply, Endpoint, Notification, PUD, PGD, PageDirectory, PageTable, CNode)
 from sel4coreplat.cdlutil import (register_aarch64_sizes, cdlsafe, MTE, GlobalDir, UpperDir, LowerDir, PTable, PFrame,
                                   vaddr_to_ud, vaddr_to_d, vaddr_to_pt, vaddr_to_pf, parent_mte_of, mapping_slot_of,
                                   MRInfoNotELF, MRInfoELF, MRInfo, PageInfoNotELF, PageInfoELF, PageInfo, mrinfo_to_pageinfo)
